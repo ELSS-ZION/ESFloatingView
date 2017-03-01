@@ -80,14 +80,14 @@ static char KEY_targetOffsetY;
 {
     if (self.contentOffset.y - self.targetOffsetY < 2 && self.contentOffset.y - self.targetOffsetY > -2)
     {
-        self.ES_isFloating = NO;
-        
         CGPoint tmpOffset = self.contentOffset;
         tmpOffset.y = self.targetOffsetY;
         self.contentOffset = tmpOffset;
-    
+        
         [self.displayLink invalidate];
         self.displayLink = nil;
+        
+        self.ES_isFloating = NO;
         return;
     }
     
