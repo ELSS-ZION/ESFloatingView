@@ -78,8 +78,14 @@ static char KEY_targetOffsetY;
 
 - (void)ESFloatView_scrollToOffset
 {
-    if (self.contentOffset.y - self.targetOffsetY < 2 && self.contentOffset.y - self.targetOffsetY > -2) {
+    if (self.contentOffset.y - self.targetOffsetY < 2 && self.contentOffset.y - self.targetOffsetY > -2)
+    {
         self.ES_isFloating = NO;
+        
+        CGPoint tmpOffset = self.contentOffset;
+        tmpOffset.y = self.targetOffsetY;
+        self.contentOffset = tmpOffset;
+    
         [self.displayLink invalidate];
         self.displayLink = nil;
         return;
