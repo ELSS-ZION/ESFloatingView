@@ -71,9 +71,9 @@ static char KEY_targetOffsetY;
     
     self.targetOffsetY = tableVOffset;
     
-    [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-    
-    
+    if (self.contentOffset.y != self.targetOffsetY) {
+        [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    }
 }
 
 - (void)ESFloatView_scrollToOffset
