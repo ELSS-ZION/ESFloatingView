@@ -99,7 +99,7 @@ static char KEY_targetOffsetY;
 
 - (void)setTargetOffsetY:(CGFloat)targetOffsetY
 {
-    objc_setAssociatedObject(self, &KEY_targetOffsetY, [NSNumber numberWithDouble:targetOffsetY], OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &KEY_targetOffsetY, @(targetOffsetY), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 
@@ -135,7 +135,7 @@ static char KEY_targetOffsetY;
 
 - (void)setES_isFloating:(BOOL)ES_isFloating
 {
-    objc_setAssociatedObject(self, &KEY_ES_isFloating, @(ES_isFloating), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &KEY_ES_isFloating, @(ES_isFloating), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)ES_isFloating
