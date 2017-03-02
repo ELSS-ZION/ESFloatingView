@@ -99,7 +99,7 @@ static char KEY_targetOffsetY;
 
 - (void)setTargetOffsetY:(CGFloat)targetOffsetY
 {
-    objc_setAssociatedObject(self, &KEY_targetOffsetY, @(targetOffsetY), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &KEY_targetOffsetY, [NSNumber numberWithDouble:targetOffsetY], OBJC_ASSOCIATION_ASSIGN);
 }
 
 
