@@ -10,8 +10,8 @@
 #import "UIScrollView+ESFloatingView.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (strong, nonatomic) UITextField *textField;
 
 @end
 
@@ -19,7 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.textField = [[UITextField alloc] init];
+    [self.view addSubview:self.textField];
+    
+    
+    self.tableView.delegate = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"x"];
+    self.automaticallyAdjustsScrollViewInsets = YES;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -37,17 +45,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if ([self.textField isFirstResponder]) {
+        [self.textField endEditing:YES];
+        return;
+    }
+    
     self.tableView.ES_floatingView = [tableView cellForRowAtIndexPath:indexPath];
     [self.textField becomeFirstResponder];
     return;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    if (scrollView.ES_isFloating) {
-        return;
-    }
-    
     [self.textField endEditing:YES];
 }
 

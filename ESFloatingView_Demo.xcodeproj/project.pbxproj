@@ -123,7 +123,7 @@
 				TargetAttributes = {
 					243D5CB51E66AC4E001AAE29 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = KLL43ZU6XM;
+						DevelopmentTeam = 3ZACQEMZBK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -285,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KLL43ZU6XM;
+				DEVELOPMENT_TEAM = 3ZACQEMZBK;
 				INFOPLIST_FILE = ESFloatingView_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "E-Paper.ESFloatingView-Demo";
@@ -297,7 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KLL43ZU6XM;
+				DEVELOPMENT_TEAM = 3ZACQEMZBK;
 				INFOPLIST_FILE = ESFloatingView_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "E-Paper.ESFloatingView-Demo";

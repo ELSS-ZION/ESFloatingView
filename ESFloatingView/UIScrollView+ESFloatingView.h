@@ -11,6 +11,5 @@
 @interface UIScrollView (ESFloatingView)
 
 @property (nonatomic, weak) UIView *ES_floatingView;
-@property (nonatomic, assign) BOOL ES_isFloating;
 
 @end
