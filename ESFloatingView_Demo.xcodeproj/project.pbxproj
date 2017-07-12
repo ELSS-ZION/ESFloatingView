@@ -14,6 +14,7 @@
 		243D5CC61E66AC4E001AAE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243D5CC51E66AC4E001AAE29 /* Assets.xcassets */; };
 		243D5CC91E66AC4E001AAE29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243D5CC71E66AC4E001AAE29 /* LaunchScreen.storyboard */; };
 		243D5CD31E66AD05001AAE29 /* UIScrollView+ESFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243D5CD21E66AD05001AAE29 /* UIScrollView+ESFloatingView.m */; };
+		2445C9001F1627B10064AA5E /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2445C8FF1F1627B10064AA5E /* Demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		243D5CCA1E66AC4E001AAE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		243D5CD11E66AD05001AAE29 /* UIScrollView+ESFloatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ESFloatingView.h"; sourceTree = "<group>"; };
 		243D5CD21E66AD05001AAE29 /* UIScrollView+ESFloatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ESFloatingView.m"; sourceTree = "<group>"; };
+		2445C8FF1F1627B10064AA5E /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		243D5CB81E66AC4E001AAE29 /* ESFloatingView_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2445C8FF1F1627B10064AA5E /* Demo.gif */,
 				243D5CBC1E66AC4E001AAE29 /* AppDelegate.h */,
 				243D5CBD1E66AC4E001AAE29 /* AppDelegate.m */,
 				243D5CBF1E66AC4E001AAE29 /* ViewController.h */,
@@ -153,6 +156,7 @@
 			files = (
 				243D5CC91E66AC4E001AAE29 /* LaunchScreen.storyboard in Resources */,
 				243D5CC61E66AC4E001AAE29 /* Assets.xcassets in Resources */,
+				2445C9001F1627B10064AA5E /* Demo.gif in Resources */,
 				243D5CC41E66AC4E001AAE29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
