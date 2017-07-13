@@ -9,7 +9,7 @@ and
 ```
 #import "UIScrollView+ESFloatingView.h"
 ...
-scrollView.ES_floatingView = {subview of scrollView}
+scrollView.ES_floatingView = {a subview of scrollView}
 ...
 ```
 
