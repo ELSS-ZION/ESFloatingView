@@ -38,7 +38,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"x"];
-    
     return cell;
 }
 
@@ -52,7 +51,6 @@
     
     self.tableView.ES_floatingView = [tableView cellForRowAtIndexPath:indexPath];
     [self.textField becomeFirstResponder];
-    return;
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
